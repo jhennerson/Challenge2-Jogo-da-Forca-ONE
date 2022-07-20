@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>Adicionar Palavra</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" class="logo">
+    </header>
+    <main>
+        <div class="adicionar">
+            <textarea type="text" id="nova" placeholder="Digite uma palavra ou frase" maxlength="8" autofocus></textarea>
+            <div class="restricao" id="restricao">
+                <img src="images/attention.png" alt="Icone com exclamação">
+                <label for="campo-texto">Max. de 8 letras.</label>
+            </div>
+        </div>
+        
+        <section class="botoes" id="botoes-palavra">
+            <div class="botao" id="salvar-palavra">
+                <a href="jogo.html">
+                    <button id="botao-salvar-palavra" onclick="adicionarPalavra()">Salvar e começar</button>
+                </a>            
+            </div>
+            <div class="botao" id="cancelar">
+                <a href="index.html">
+                    <button id="botao-cancelar">Cancelar</button>
+                </a>            
+            </div>
+        </section>
+    </main>
+
+    <script src="./scripts/adicionar.js"></script>
+</body>
+</html>

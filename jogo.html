@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" class="logo">
+    </header>
+    <main>
+        <section id="bloco-forca" class="canvas">
+            <canvas id="forca" height="700px" width="800"></canvas>
+        </section>
+        <section class="botoes" id="botoes-jogo">
+            <div class="botao">
+                <button class="botao" id="botao-novo-jogo" onclick="jogarNovamente()">Novo Jogo</button>                
+            </div>
+            <div class="botao">
+                <a href="index.html">
+                    <button class="botao" id="botao-desistir-jogo">Desistir</button>
+                </a>                
+            </div>
+        </section>
+    </main>    
+    
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/adicionar.js"></script>
+</body>
+</html>
